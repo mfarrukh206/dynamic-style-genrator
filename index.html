@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" class="hidden">
+        <p id="controls">controls</p>
+        <div id="showhide">
+          <hr>
+          <p><input type="range" min=0.02 max=0.06 step="any" value=0.04 id="cellsize"> cell size</p>
+          <p>geometry choice: <select id="geometrychoice">
+              <option value="1">2</option>
+              <option value="2">1 - 2</option>
+              <option value="3">2 - 3</option>
+              <option value="4" selected>1 - 2 - 3</option>
+            </select></p>
+          <p>color mode: <select id="colormode">
+              <option value="1">colorful</option>
+              <option value="2" selected>colorful - brighter</option>
+              <option value="3">bicolor</option>
+              <option value="4">monochrome</option>
+              <option value="5">grey</option>
+            </select></p>
+          <p>with stroke <input type="checkbox" id="stroke" checked></p>
+          <p>random <input type="checkbox" id="random" checked></p>
+        </div> <!-- showhide -->
+      </div> <!-- menu -->
+      
+      <div style="height: 35px;" id="canvasContainer">
+        <canvas id="canvas"></canvas>
+      </div> <!-- canvasContainer -->
+      
+      <script src="script.js"></script>
+</body>
+</html>
